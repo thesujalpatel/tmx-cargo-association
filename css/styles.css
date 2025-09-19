@@ -51,6 +51,12 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+a:hover {
+  color: var(--dark);
 }
 .container {
   max-width: 1720px;
@@ -121,6 +127,7 @@ a {
 }
 .button--outline {
   border: 1px solid var(--border-outline);
+  color: var(--dark);
 }
 .button--outline-inverse {
   border: 1px solid var(--white);
@@ -202,7 +209,7 @@ a {
   place-items: center;
 }
 .strip p {
-  padding-block: 10px;
+  padding-block: 15px;
   color: var(--white);
   text-align: center;
   font-size: 14px;
@@ -243,6 +250,7 @@ header {
 .nav-option {
   height: fit-content;
   font-size: 17px;
+  color: var(--dark-70);
 }
 
 /* ===================
@@ -264,7 +272,6 @@ Hero Section
 }
 .hero-content {
   position: absolute;
-  padding: 20px 50px;
   inset: 0;
   display: flex;
   flex-direction: column;
@@ -272,7 +279,7 @@ Hero Section
   align-items: center;
   text-align: center;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -337,4 +344,11 @@ footer .section-head {
 .social-icon-wrapper {
   height: 20px;
   width: max-content;
+}
+
+/* ===================
+Responsive Styles
+ =================== */
+
+@media (max-width: 1280px) {
 }
