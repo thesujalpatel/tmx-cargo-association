@@ -18,45 +18,542 @@
     <title>TMX Cargo Association</title>
   </head>
   <body>
+    <div class="strip">
+      <p>
+        Have a question or need assistance with your logistics needs? Our team
+        is here to help. Contact us today for a personalized solution tailored
+        to your business.
+      </p>
+    </div>
     <header>
-      <div class="strip">
-        <p>
-          Have a question or need assistance with your logistics needs? Our team
-          is here to help. Contact us today for a personalized solution tailored
-          to your business.
-        </p>
-      </div>
-      <nav div="nav-section">
+      <!-- Navigaton Bar -->
+      <nav class="nav-section">
         <div class="container">
           <div class="nav-wrapper">
             <div class="nav-logo-wrapper">
-              <img src="assets/images/Logo.png" alt="Logo" />
+              <img class="nav-logo" src="assets/images/Logo.png" alt="Logo" />
             </div>
             <div class="nav-options">
-              <div class="nav-option">Home</div>
-              <div class="nav-option">About</div>
-              <div class="nav-option">Membership</div>
-              <div class="nav-option">Services</div>
-              <div class="nav-option">Location</div>
-              <div class="nav-option">Contact Us</div>
-              <div class="nav-option">Affiliate Program</div>
+              <a href="#" class="nav-option">Home</a>
+              <a href="#" class="nav-option">About</a>
+              <a href="#" class="nav-option">Membership</a>
+              <a href="#" class="nav-option">Services</a>
+              <a href="#" class="nav-option">Location</a>
+              <a href="#" class="nav-option">Contact Us</a>
+              <a href="#" class="nav-option">Affiliate Program</a>
             </div>
-            <div class="nav-button-group-wrapper">
-              <div class="button button-outline">Agents</div>
-              <div class="button button-primary">Sign In</div>
+            <div class="button-group-wrapper">
+              <button class="button button--outline">Agents</button>
+              <button class="button button--primary">Sign In</button>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer>
-      <!-- <div class="strip">
-        <p>
-        © 2024 TMX Global All rights reserved
-        </p>
-      </div> -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="hero-background-img-wrapper">
+              <img
+                class="hero-background-img"
+                src="assets/images/HeroBackground.png"
+                alt="Hero Background Image"
+              />
+            </div>
+            <div class="hero-img-overlay"></div>
+            <div class="hero-content">
+              <h1 class="title title--lg title--light">
+                Next-Gen Freight Services With TMX Global's AI-Powered Solutions
+              </h1>
+              <p class="subtitle subtitle--lg subtitle--light">
+                Find agent/freighterUnlocking the future of freight
+                transportation with TMX Global's cutting-edge AI solutions.
+                Experience unparalleled efficiency, amazing benefits, and
+                data-driven insights that propel your business into the next
+                generation of freight services. Join TMX Global Now.
+              </p>
+              <div class="button-group-wrapper">
+                <button class="button button--outline-inverse">
+                  Join As Freighter
+                </button>
+                <button class="button button--secondary">
+                  Join As Affiliate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-wrapper">
+            <div class="section-head">
+              <!-- Section Title -->
+              <h2 class="title title--md title--dark">Who We Are</h2>
+              <!-- Section Subtitle -->
+              <p class="subtitle subtitle--sm subtitle--dark">
+                Welcome to TMX Global, your premier partner in freight, imports,
+                and exports. With decades of experience, we pride ourselves on
+                providing efficient, reliable, and cost-effective logistics
+                solutions tailored to meet the unique needs of our clients. Our
+                mission is to simplify international trade and help businesses
+                expand their reach globally. At TMX Global, we are committed to
+                delivering excellence and ensuring your goods reach their
+                destination safely and on time.
+              </p>
+            </div>
+            <!-- Section Content -->
+            <div class="section-body">
+              <div class="box-grid box-grid--squished">
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/freightForwarding.svg"
+                      alt="Freight Forwarding"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Freight Forwarding</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    This is where the magic happens. We build prototypes,
+                    wireframes, and the architecture to bring your product to
+                    life.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/airCargo.svg"
+                      alt="Air Cargo"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Air Cargo</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Fast and secure air cargo services to meet your tight
+                    deadlines.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/seaCargo.svg"
+                      alt="Sea Cargo"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Sea Cargo</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Reliable sea cargo solutions for large shipments.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/warehousingAndSCM.svg"
+                      alt="Warehousing & Supply Chain Management"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">
+                    Warehousing & Supply Chain Management
+                  </div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Comprehensive warehousing and supply chain management
+                    services.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/landFreight.svg"
+                      alt="Land Freight"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Land Freight</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Efficient and cost-effective land freight services.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/consultancy.svg"
+                      alt="Consultancy"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Consultancy</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Affordable consultation and advice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section class="service-section">
+        <div class="container">
+          <div class="service-wrapper">
+            <div class="section-head">
+              <!-- Section Title -->
+              <h2 class="title title--md title--light">Our Services</h2>
+              <!-- Section Subtitle -->
+              <p class="subtitle subtitle--sm subtitle--light">
+                Where Every Journey Finds Its Safe Harbor: Trust Our Cargo
+                Services for Seamless Shipping Solutions Across the Globe.
+              </p>
+            </div>
+            <!-- Section Content -->
+            <div class="section-body">
+              <div class="box-grid">
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/freightForwarding.svg"
+                      alt="Freight Forwarding"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Freight Forwarding</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    We offer comprehensive freight forwarding services by land,
+                    sea, and air. Our team of experts will handle all aspects of
+                    transportation, from pickup to delivery, ensuring a smooth
+                    and efficient process.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/customsClearance.svg"
+                      alt="Customs Clearance"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Customs Clearance</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Navigating customs can be complex. Our experienced customs
+                    brokers will manage all documentation and regulatory
+                    requirements, ensuring your shipments clear customs quickly
+                    and without hassle.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/warehousingAndDistribution.svg"
+                      alt="Warehousing & Distribution"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Warehousing & Distribution</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    We provide secure warehousing solutions and efficient
+                    distribution services. Our state-of-the-art facilities and
+                    network of distribution centers enable us to store and
+                    deliver your goods with precision.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/importAndExportConsulting.svg"
+                      alt="Import & Export Consulting"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Import & Export Consulting</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Our consulting services are designed to help you navigate
+                    the complexities of international trade. We provide expert
+                    advice on import/export regulations, market entry
+                    strategies, and supply chain optimization.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/packageDelivery.svg"
+                      alt="Package Delivery"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Package Delivery</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    From small parcels to large shipments, we offer reliable and
+                    timely package delivery services. Our extensive network
+                    ensures that your packages reach their destination promptly
+                    and securely.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/supplyChainManagement.svg"
+                      alt="Supply Chain Management"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Supply Chain Management</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    We provide end-to-end supply chain management solutions. Our
+                    services include procurement, logistics planning, and
+                    inventory management, ensuring an optimized and seamless
+                    supply chain process.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Section Footer -->
+            <div class="section-footer">
+              <div class="button-group-wrapper">
+                <button class="button button--outline-inverse">
+                  Join As Freighter
+                </button>
+                <button class="button button--secondary">
+                  Join As Affiliate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Branches Section -->
+      <section class="branches-section">
+        <div class="container">
+          <div class="branches-wrapper">
+            <div class="section-head">
+              <!-- Section Title -->
+              <h2 class="title title--md title--dark">Our Global Reach</h2>
+              <!-- Section Subtitle -->
+              <p class="subtitle subtitle--sm subtitle--dark">
+                TMX Global boasts a well-established network that spans across
+                continents. We offer seamless freight forwarding, air cargo, sea
+                cargo, warehousing, and land freight services to ensure your
+                business operations run smoothly on a global scale. Our team of
+                logistics experts is well-versed in the intricacies of
+                international trade, allowing us to navigate customs regulations
+                and documentation efficiently.
+              </p>
+            </div>
+            <!-- Section Content -->
+            <div class="section-body">
+              <div class="box-grid box-grid--squished">
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/asia.svg"
+                      alt="Asia Globe"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Asia</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Seamless logistics solutions across the vast Asian
+                    continent.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/africa.svg"
+                      alt="Africa Globe"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Africa</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Efficient freight forwarding throughout Africa.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/northAmerica.svg"
+                      alt="North America Globe"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">North America</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Streamlined logistics for your North American operations.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/southAmerica.svg"
+                      alt="South America Globe"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">South America</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Reliable logistics services for South American markets.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/europe.svg"
+                      alt="Europe Globe"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Europe</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Expert logistics solutions for European businesses.
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box-img-wrapper">
+                    <img
+                      src="/assets/svg/australia.svg"
+                      alt="Australia Globe"
+                      class="box-img"
+                    />
+                  </div>
+                  <div class="title title--sm">Australia</div>
+                  <p class="subtitle subtitle--sm subtitle--dark">
+                    Comprehensive logistics services for Australia and Oceania.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer">
+              <button class="button button--outline">
+                Learn More About Our Global Network
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Payout Section -->
+      <section class="payout-section">
+        <div class="container">
+          <div class="payout-wrapper">
+            <div class="section-head">
+              <!-- Section Title -->
+              <h2 class="title title--md title--light">
+                Get paid Anytime Anywhere
+              </h2>
+            </div>
+            <!-- Section Footer -->
+            <div class="section-footer">
+              <button class="button button--outline-inverse">Join Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="section-head">
+            <h2 class="title title--md title--dark">Get in Touch</h2>
+            <p class="subtitle subtitle--sm subtitle--dark">
+              Have a question or need assistance with your logistics needs? Our
+              team is here to help. Contact us today for a personalized solution
+              tailored to your business.
+            </p>
+          </div>
+          <div class="section-body">
+            <div class="details-group">
+              <h3 class="title title--xsm title--dark">Contact Information</h3>
+              <div class="details-group-item">
+                <div class="contact-icon-wrapper">
+                  <img src="assets/svg/callCalling.svg" alt="Call Calling" />
+                </div>
+                <p class="subtitle subtitle--sm subtitle--dark">
+                  +254722359463 / +254726771499
+                </p>
+              </div>
+              <div class="details-group-item">
+                <div class="contact-icon-wrapper">
+                  <img src="assets/svg/smsTracking.svg" alt="SMS Tracking" />
+                </div>
+                <p class="subtitle subtitle--sm subtitle--dark">
+                  info@tmxglobal.com
+                </p>
+              </div>
+              <div class="details-group-item">
+                <div class="contact-icon-wrapper">
+                  <img src="assets/svg/location.svg" alt="Location" />
+                </div>
+                <p class="subtitle subtitle--sm subtitle--dark">
+                  View Park Towers, Floor 9, Wing A
+                </p>
+              </div>
+            </div>
+            <div class="details-group">
+              <h3 class="title title--xsm title--dark">Agents</h3>
+              <a
+                href="#"
+                class="details-group-item subtitle subtitle--sm subtitle--dark-muted"
+              >
+                Africa
+              </a>
+              <a
+                href="#"
+                class="details-group-item subtitle subtitle--sm subtitle--dark-muted"
+                >Asia</a
+              >
+              <a
+                href="#"
+                class="details-group-item subtitle subtitle--sm subtitle--dark-muted"
+              >
+                Europe
+              </a>
+              <a
+                href="#"
+                class="details-group-item subtitle subtitle--sm subtitle--dark-muted"
+              >
+                America
+              </a>
+            </div>
+            <div class="details-group">
+              <h3 class="title title--xsm title--dark">Get a Quote</h3>
+              <div class="details-group-item">
+                <button class="button button--outline">
+                  Instant Pricing/Rates
+                </button>
+              </div>
+            </div>
+            <div class="details-group">
+              <h3 class="title title--xsm title--dark">Social</h3>
+              <div class="social-group">
+                <a href="#" class="details-group-item social-icon-wrapper">
+                  <img src="assets/svg/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="#" class="details-group-item social-icon-wrapper">
+                  <img src="assets/svg/twitter.svg" alt="X (Twitter)" />
+                </a>
+                <a href="#" class="details-group-item social-icon-wrapper">
+                  <img src="assets/svg/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="#" class="details-group-item social-icon-wrapper">
+                  <img src="assets/svg/youtube.svg" alt="YouTube" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+    <div class="strip">
+      <p>© 2024 TMX Global All rights reserved</p>
+    </div>
   </body>
   <script src="js/scripts.js"></script>
 </html>
