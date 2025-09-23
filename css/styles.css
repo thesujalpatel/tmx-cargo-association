@@ -79,10 +79,12 @@ a:hover {
   gap: 15px;
 }
 .section-head p {
-  max-width: 1320px;
+  max-width: 80%;
 }
 .section-body {
-  margin-top: 20px;
+  margin-top: 40px;
+  display: flex;
+  gap: 90px;
 }
 .section-footer {
   margin-top: 30px;
@@ -90,7 +92,7 @@ a:hover {
   justify-content: center;
 }
 
-.box {
+.card {
   background-color: var(--white);
   padding: 40px;
   min-height: 300px;
@@ -98,7 +100,7 @@ a:hover {
   flex-direction: column;
   gap: 10px;
 }
-.box-img-wrapper {
+.card-img-wrapper {
   max-height: 90px;
   width: max-content;
 }
@@ -116,88 +118,109 @@ a:hover {
   width: fit-content;
   padding: 15px 25px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .button--primary {
   background-color: var(--primary);
   color: var(--white);
 }
+.button--primary:hover {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
 .button--secondary {
   background-color: var(--secondary);
   color: var(--white);
 }
+.button--secondary:hover {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
 .button--outline {
   border: 1px solid var(--border-outline);
   color: var(--dark);
 }
+.button--outline:hover {
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
+
 .button--outline-inverse {
   border: 1px solid var(--white);
   color: var(--white);
 }
-
-/* Titles
- =================== */
-.title {
-  font-weight: 600;
-}
-
-/* Colors */
-.title--light {
-  color: var(--white);
-}
-.title--dark {
+.button--outline-inverse:hover {
+  background-color: var(--white);
   color: var(--dark);
 }
 
-/* Sizes */
-.title--lg {
+/* Titles and Subtitles
+ =================== */
+/* Hero Typography */
+.hero-title {
+  font-weight: 600;
+  color: var(--white);
   font-size: 60px;
 }
-.title--md {
-  font-size: 50px;
-}
-.title--sm {
-  font-size: 30px;
-}
-.title--xsm {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-/* Sub Titles 
- =================== */
-/* .subtitle{
-  font-weight: 400;
-} */
-
-/* Colors */
-.subtitle--light {
-  color: var(--light-80);
-}
-.subtitle--dark-muted {
-  color: var(--dark-70);
-}
-.subtitle--dark {
-  color: var(--dark-80);
-}
-
-/* Sizes */
-.subtitle--sm {
-  font-size: 17px;
-}
-.subtitle--lg {
+.hero-subtitle {
   font-size: 24px;
   font-weight: 300;
+  color: var(--light-80);
+}
+
+/* Section Typography */
+.section-title {
+  font-weight: 600;
+  font-size: 50px;
+  color: var(--dark);
+}
+.section-subtitle {
+  font-size: 17px;
+  color: var(--dark-80);
+}
+.service-section .section-title,
+.payout-section .section-title {
+  color: var(--white);
+}
+.service-section .section-subtitle {
+  color: var(--light-80);
+}
+
+/* Card Typography */
+.card-title {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--dark);
+}
+.card-subtitle {
+  color: var(--dark-80);
+  font-size: 17px;
+}
+
+/* Footer Section Typography */
+.details-group-title {
+  font-weight: 400;
+  color: var(--dark);
+}
+.details-group-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  color: var(--dark-70);
 }
 
 /* Card Grid
 =================== */
-.box-grid {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 20px;
   width: 100%;
 }
-.box-grid--squished {
+.card-grid--squished {
   max-width: 1400px;
   margin-inline: auto;
 }
@@ -262,6 +285,7 @@ Hero Section
 }
 .hero-wrapper {
   position: relative;
+  overflow: hidden;
 }
 .hero-background-img-wrapper {
   height: 648px;
@@ -280,7 +304,7 @@ Hero Section
   align-items: center;
   text-align: center;
   gap: 20px;
-  max-width: 1120px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -290,7 +314,7 @@ Service Section
 .service-section {
   background-color: var(--primary);
 }
-.service-section .box {
+.service-section .card {
   min-height: 370px;
 }
 
@@ -318,23 +342,19 @@ footer .section-head {
   align-items: start;
   text-align: left;
 }
-.section-body {
-  display: flex;
-  gap: 90px;
+footer .section-body {
+  margin-top: 0px;
 }
 .details-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.details-group-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+
 .contact-icon-wrapper {
   background-color: var(--primary);
   height: 50px;
+  min-width: 50px;
   border-radius: 50%;
   padding: 12px;
 }
@@ -342,6 +362,10 @@ footer .section-head {
   display: flex;
   gap: 20px;
 }
+.social-group a:hover {
+  scale: 1.2;
+}
+
 .social-icon-wrapper {
   height: 20px;
   width: max-content;
@@ -351,5 +375,78 @@ footer .section-head {
 Responsive Styles
  =================== */
 
+@media (max-width: 1536px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  footer .section-head {
+    max-width: none;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  footer .section-body {
+    margin-top: 40px;
+  }
+  .card {
+    min-height: auto;
+  }
+}
+
 @media (max-width: 1280px) {
+  .hero-title {
+    font-size: 50px;
+  }
+  .hero-subtitle {
+    font-size: 22px;
+  }
+  .device-md--hide {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .button {
+    padding: 10px 20px;
+  }
+  footer .section-body {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 40px;
+  }
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  /* Section Typography */
+  .section-title {
+    font-size: 40px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 26px;
+  }
+  .card-subtitle {
+    font-size: 16px;
+  }
+
+  .section-head p {
+    max-width: none;
+  }
+  .nav-logo-wrapper {
+    max-height: 60px;
+  }
+  .device-sm--hide {
+    display: none;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
