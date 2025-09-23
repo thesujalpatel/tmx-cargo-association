@@ -12,6 +12,12 @@
       rel="stylesheet"
     />
 
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -30,21 +36,44 @@
       <nav class="nav-section">
         <div class="container">
           <div class="nav-wrapper">
-            <div class="nav-logo-wrapper">
-              <img class="nav-logo" src="assets/images/Logo.png" alt="Logo" />
+            <div class="static-nav-wrapper">
+              <a href="#" class="nav-logo-wrapper">
+                <img class="nav-logo" src="assets/images/Logo.png" alt="Logo" />
+              </a>
+              <div class="nav-options device-md--hide">
+                <a href="#" class="nav-option">Home</a>
+                <a href="#" class="nav-option">About</a>
+                <a href="#" class="nav-option">Membership</a>
+                <a href="#" class="nav-option">Services</a>
+                <a href="#" class="nav-option">Location</a>
+                <a href="#" class="nav-option">Contact Us</a>
+                <a href="#" class="nav-option">Affiliate Program</a>
+              </div>
+              <div class="button-group-wrapper device-sm--hide">
+                <button class="button button--outline">Agents</button>
+                <button class="button button--primary">Sign In</button>
+              </div>
+              <button
+                class="button button--outline device-md--show"
+                id="menu-btn"
+              >
+                <span class="material-symbols-outlined">menu</span>
+              </button>
             </div>
-            <div class="nav-options device-md--hide">
-              <a href="#" class="nav-option">Home</a>
-              <a href="#" class="nav-option">About</a>
-              <a href="#" class="nav-option">Membership</a>
-              <a href="#" class="nav-option">Services</a>
-              <a href="#" class="nav-option">Location</a>
-              <a href="#" class="nav-option">Contact Us</a>
-              <a href="#" class="nav-option">Affiliate Program</a>
-            </div>
-            <div class="button-group-wrapper device-sm--hide">
-              <button class="button button--outline">Agents</button>
-              <button class="button button--primary">Sign In</button>
+            <div class="collapsible-nav-wrapper" id="collapsible-nav">
+              <div class="nav-options device-md--show">
+                <a href="#" class="nav-option">Home</a>
+                <a href="#" class="nav-option">About</a>
+                <a href="#" class="nav-option">Membership</a>
+                <a href="#" class="nav-option">Services</a>
+                <a href="#" class="nav-option">Location</a>
+                <a href="#" class="nav-option">Contact Us</a>
+                <a href="#" class="nav-option">Affiliate Program</a>
+              </div>
+              <div class="button-group-wrapper device-sm--show">
+                <button class="button button--outline">Agents</button>
+                <button class="button button--primary">Sign In</button>
+              </div>
             </div>
           </div>
         </div>
@@ -117,7 +146,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Freight Forwarding</div>
+                  <h3 class="card-title">Freight Forwarding</h3>
                   <p class="card-subtitle">
                     This is where the magic happens. We build prototypes,
                     wireframes, and the architecture to bring your product to
@@ -132,7 +161,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Air Cargo</div>
+                  <h3 class="card-title">Air Cargo</h3>
                   <p class="card-subtitle">
                     Fast and secure air cargo services to meet your tight
                     deadlines.
@@ -146,7 +175,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Sea Cargo</div>
+                  <h3 class="card-title">Sea Cargo</h3>
                   <p class="card-subtitle">
                     Reliable sea cargo solutions for large shipments.
                   </p>
@@ -159,9 +188,9 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">
+                  <h3 class="card-title">
                     Warehousing & Supply Chain Management
-                  </div>
+                  </h3>
                   <p class="card-subtitle">
                     Comprehensive warehousing and supply chain management
                     services.
@@ -175,7 +204,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Land Freight</div>
+                  <h3 class="card-title">Land Freight</h3>
                   <p class="card-subtitle">
                     Efficient and cost-effective land freight services.
                   </p>
@@ -188,7 +217,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Consultancy</div>
+                  <h3 class="card-title">Consultancy</h3>
                   <p class="card-subtitle">
                     Affordable consultation and advice.
                   </p>
@@ -223,7 +252,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Freight Forwarding</div>
+                  <h3 class="card-title">Freight Forwarding</h3>
                   <p class="card-subtitle">
                     We offer comprehensive freight forwarding services by land,
                     sea, and air. Our team of experts will handle all aspects of
@@ -239,7 +268,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Customs Clearance</div>
+                  <h3 class="card-title">Customs Clearance</h3>
                   <p class="card-subtitle">
                     Navigating customs can be complex. Our experienced customs
                     brokers will manage all documentation and regulatory
@@ -255,7 +284,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Warehousing & Distribution</div>
+                  <h3 class="card-title">Warehousing & Distribution</h3>
                   <p class="card-subtitle">
                     We provide secure warehousing solutions and efficient
                     distribution services. Our state-of-the-art facilities and
@@ -271,7 +300,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Import & Export Consulting</div>
+                  <h3 class="card-title">Import & Export Consulting</h3>
                   <p class="card-subtitle">
                     Our consulting services are designed to help you navigate
                     the complexities of international trade. We provide expert
@@ -287,7 +316,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Package Delivery</div>
+                  <h3 class="card-title">Package Delivery</h3>
                   <p class="card-subtitle">
                     From small parcels to large shipments, we offer reliable and
                     timely package delivery services. Our extensive network
@@ -303,7 +332,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Supply Chain Management</div>
+                  <h3 class="card-title">Supply Chain Management</h3>
                   <p class="card-subtitle">
                     We provide end-to-end supply chain management solutions. Our
                     services include procurement, logistics planning, and
@@ -357,7 +386,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Asia</div>
+                  <h3 class="card-title">Asia</h3>
                   <p class="card-subtitle">
                     Seamless logistics solutions across the vast Asian
                     continent.
@@ -371,7 +400,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Africa</div>
+                  <h3 class="card-title">Africa</h3>
                   <p class="card-subtitle">
                     Efficient freight forwarding throughout Africa.
                   </p>
@@ -384,7 +413,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">North America</div>
+                  <h3 class="card-title">North America</h3>
                   <p class="card-subtitle">
                     Streamlined logistics for your North American operations.
                   </p>
@@ -397,7 +426,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">South America</div>
+                  <h3 class="card-title">South America</h3>
                   <p class="card-subtitle">
                     Reliable logistics services for South American markets.
                   </p>
@@ -410,7 +439,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Europe</div>
+                  <h3 class="card-title">Europe</h3>
                   <p class="card-subtitle">
                     Expert logistics solutions for European businesses.
                   </p>
@@ -423,7 +452,7 @@
                       class="card-img"
                     />
                   </div>
-                  <div class="card-title">Australia</div>
+                  <h3 class="card-title">Australia</h3>
                   <p class="card-subtitle">
                     Comprehensive logistics services for Australia and Oceania.
                   </p>
