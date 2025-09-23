@@ -234,7 +234,7 @@ a:hover {
   place-items: center;
 }
 .strip p {
-  padding-block: 15px;
+  padding: 15px 20px;
   color: var(--white);
   text-align: center;
   font-size: 14px;
@@ -291,18 +291,20 @@ Hero Section
 .hero-wrapper {
   position: relative;
   overflow: hidden;
+  min-height: 400px;
 }
 .hero-background-img-wrapper {
-  height: 648px;
+  position: absolute;
+  inset: 0;
 }
+
 .hero-img-overlay {
   position: absolute;
   inset: 0;
   background-color: var(--primary-tint);
 }
 .hero-content {
-  position: absolute;
-  inset: 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,6 +313,7 @@ Hero Section
   gap: 20px;
   max-width: 80%;
   margin: 0 auto;
+  padding-block: 157px;
 }
 
 /* ===================
@@ -455,6 +458,9 @@ Responsive Styles
     width: 35px;
     padding: 8px;
   }
+  .hero-content {
+    padding-block: 80px;
+  }
 }
 @media (max-width: 768px) {
   .hero-title {
@@ -463,8 +469,9 @@ Responsive Styles
   .hero-subtitle {
     font-size: 18px;
   }
-
-  /* Section Typography */
+  .hero-content {
+    padding-block: 50px;
+  }
   .section-title {
     font-size: 30px;
   }
