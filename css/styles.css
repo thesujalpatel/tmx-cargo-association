@@ -6,7 +6,6 @@
   --light: #f6f6f6;
   --black: #000000;
   --dark: #09090b;
-
   /* Fonts */
   --font-dm-sans: "DM Sans", sans-serif;
 
@@ -429,6 +428,7 @@ Responsive Styles
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--dark);
   }
   .collapsible-nav-wrapper {
     display: flex;
