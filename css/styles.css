@@ -214,6 +214,7 @@ a:hover {
   gap: 10px;
   font-size: 17px;
   color: var(--dark-70);
+  white-space: nowrap;
 }
 
 /* Card Grid
@@ -486,13 +487,6 @@ Responsive Styles
   }
   .card-title {
     font-size: 22px;
-  }
-
-  .details-group-title {
-    font-size: 16px;
-  }
-  .details-group-item {
-    font-size: 14px;
   }
 
   footer .section-body {
