@@ -475,7 +475,7 @@ Responsive Styles
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
   .card-grid--squished {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   }
 }
 @media (max-width: 768px) {
