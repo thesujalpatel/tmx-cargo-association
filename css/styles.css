@@ -236,8 +236,9 @@ a:hover {
   display: grid;
   place-items: center;
 }
-.strip marquee {
-  padding-block: 15px;
+.strip marquee,
+.strip p {
+  padding: 15px 20px;
   color: var(--white);
   text-align: center;
   font-size: 14px;
@@ -512,6 +513,11 @@ Responsive Styles
   }
 }
 @media (max-width: 768px) {
+  .strip marquee,
+  .strip p {
+    padding: 5px 20px;
+  }
+
   .hero-content {
     padding-block: 50px;
   }
