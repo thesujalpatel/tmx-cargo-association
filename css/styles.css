@@ -113,12 +113,13 @@ a:hover {
 .button {
   border-radius: 50px;
   background-color: transparent;
-  border: none;
-  width: fit-content;
+  border: 1px solid transparent;
+  width: min-content;
   padding: 15px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .button--primary {
@@ -157,7 +158,7 @@ a:hover {
   color: var(--dark);
 }
 
-/* Titles and Subtitles
+/* Titles and descs
  =================== */
 /* Hero Typography */
 .hero-title {
@@ -165,7 +166,7 @@ a:hover {
   color: var(--white);
   font-size: 60px;
 }
-.hero-subtitle {
+.hero-desc {
   font-size: 24px;
   font-weight: 300;
   color: var(--light-80);
@@ -177,7 +178,7 @@ a:hover {
   font-size: 50px;
   color: var(--dark);
 }
-.section-subtitle {
+.section-desc {
   font-size: 17px;
   color: var(--dark-80);
 }
@@ -185,7 +186,7 @@ a:hover {
 .payout-section .section-title {
   color: var(--white);
 }
-.service-section .section-subtitle {
+.service-section .section-desc {
   color: var(--light-80);
 }
 
@@ -195,7 +196,7 @@ a:hover {
   font-size: 30px;
   color: var(--dark);
 }
-.card-subtitle {
+.card-desc {
   color: var(--dark-80);
   font-size: 17px;
 }
@@ -276,6 +277,13 @@ header {
   aspect-ratio: 8/7;
 }
 
+/* Right Navigation */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 /* Navigation Options */
 .nav-options {
   display: flex;
@@ -296,7 +304,7 @@ Hero Section
 .hero-wrapper {
   position: relative;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 300px;
 }
 .hero-background-img-wrapper {
   position: absolute;
@@ -356,18 +364,22 @@ footer .section-head {
   text-align: left;
 }
 footer .section-body {
-  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
 }
 .details-group {
   display: flex;
   flex-direction: column;
+
+  flex: 1;
   gap: 10px;
 }
 
 .contact-icon-wrapper {
   background-color: var(--primary);
   height: 50px;
-  width: 50px;
+  min-width: 50px;
   border-radius: 50%;
   padding: 12px;
 }
@@ -417,9 +429,9 @@ Responsive Styles
 
 @media (max-width: 1280px) {
   .hero-title {
-    font-size: 50px;
+    font-size: 40px;
   }
-  .hero-subtitle {
+  .hero-desc {
     font-size: 22px;
   }
   .device-md--hide {
@@ -440,7 +452,6 @@ Responsive Styles
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
   .collapsible-nav-wrapper .nav-options {
     margin-top: 20px;
@@ -449,7 +460,7 @@ Responsive Styles
     align-items: center;
     gap: 15px;
   }
-  .collapsible-nav-wrapper .button-group-wrapper {
+  .collapsible-nav-wrapper div {
     margin-bottom: 20px;
   }
 }
@@ -459,13 +470,34 @@ Responsive Styles
     padding: 10px 20px;
   }
 
+  .hero-title {
+    font-size: 30px;
+  }
+  .hero-desc {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+
+  .details-group-title {
+    font-size: 16px;
+  }
+  .details-group-item {
+    font-size: 14px;
+  }
+
   footer .section-body {
-    flex-direction: column;
     gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
   }
   .contact-icon-wrapper {
     height: 35px;
-    width: 35px;
+    min-width: 35px;
     padding: 8px;
   }
   .hero-content {
@@ -479,26 +511,26 @@ Responsive Styles
   }
 }
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 26px;
-  }
-  .hero-subtitle {
-    font-size: 16px;
-  }
   .hero-content {
     padding-block: 50px;
   }
-  .section-title {
-    font-size: 22px;
+  .hero-title {
+    font-size: 26px;
   }
-  .section-subtitle {
+  .hero-desc {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+  .section-desc {
     font-size: 16px;
   }
 
   .card-title {
     font-size: 20px;
   }
-  .card-subtitle {
+  .card-desc {
     font-size: 16px;
   }
 
@@ -533,6 +565,10 @@ Responsive Styles
   .button-group-wrapper {
     flex-direction: column;
     align-items: center;
+  }
+  footer .section-body {
+    gap: 30px;
+    grid-template-columns: 1fr;
   }
   .card-grid {
     grid-template-columns: 1fr;
